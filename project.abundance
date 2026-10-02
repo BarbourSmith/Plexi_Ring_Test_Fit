@@ -7,8 +7,7 @@
   "ioValues": [
     {
       "name": "Fit_Diameter",
-      "ioValue": 201,
-      "currentEquation": "201"
+      "ioValue": 201
     }
   ],
   "topLevel": true,
@@ -239,7 +238,7 @@
     {
       "atomType": "Input",
       "x": 0,
-      "y": 0.6,
+      "y": 0.2,
       "uniqueID": "id-190",
       "name": "Fit_Diameter",
       "options": []
@@ -247,7 +246,7 @@
     {
       "atomType": "Export",
       "x": 0.9,
-      "y": 0.7,
+      "y": 0.8,
       "uniqueID": "id-193",
       "ioValues": [
         {
@@ -307,9 +306,122 @@
       ]
     },
     {
+      "atomType": "Equation",
+      "x": 0.1,
+      "y": 0.8,
+      "uniqueID": "id-377",
+      "name": "x + ''",
+      "ioValues": [
+        {
+          "name": "x",
+          "ioValue": 201
+        }
+      ],
+      "currentEquation": "x + ''"
+    },
+    {
+      "atomType": "Text",
+      "x": 0.2,
+      "y": 0.9,
+      "uniqueID": "id-381",
+      "ioValues": [
+        {
+          "name": "Font Size",
+          "ioValue": 8
+        },
+        {
+          "name": "Text",
+          "ioValue": "201",
+          "currentEquation": "Lorem Ipsum"
+        },
+        {
+          "name": "Font Family",
+          "ioValue": "ROBOTO",
+          "currentEquation": "ROBOTO"
+        }
+      ],
+      "fontFamily": "ROBOTO",
+      "selectedFontIndex": 0
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.3,
+      "y": 0.9,
+      "uniqueID": "id-386",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 1
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.4,
+      "y": 0.9,
+      "uniqueID": "id-390",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": -6.1
+        },
+        {
+          "name": "yDist",
+          "ioValue": -92.4
+        },
+        {
+          "name": "zDist",
+          "ioValue": -0.5
+        }
+      ]
+    },
+    {
+      "atomType": "Difference",
+      "x": 0.6,
+      "y": 0.8,
+      "uniqueID": "id-396",
+      "ioValues": [
+        {
+          "name": "retain",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "remove",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
+    },
+    {
+      "atomType": "ExtractTag",
+      "x": 0.8,
+      "y": 0.8,
+      "uniqueID": "id-400",
+      "name": "Extract Plastic",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "tagIndex": 0,
+      "selectedTags": [
+        "Plastic"
+      ],
+      "includeUntagged": false,
+      "notKeepOut": false
+    },
+    {
       "atomType": "GitHubMolecule",
       "x": 0.3,
-      "y": 0.7,
+      "y": 0.5,
       "uniqueID": "id-41",
       "name": "Concentric_Circles",
       "ioValues": [
@@ -455,7 +567,7 @@
     {
       "atomType": "Extrude",
       "x": 0.4,
-      "y": 0.6,
+      "y": 0.5,
       "uniqueID": "id-63",
       "ioValues": [
         {
@@ -471,7 +583,7 @@
     {
       "atomType": "GitHubMolecule",
       "x": 0.3,
-      "y": 0.9,
+      "y": 0.7,
       "uniqueID": "id-67",
       "name": "Concentric_Circles",
       "ioValues": [
@@ -616,8 +728,8 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.4,
-      "y": 0.8,
+      "x": 0.5,
+      "y": 0.7,
       "uniqueID": "id-89",
       "ioValues": [
         {
@@ -633,7 +745,7 @@
     {
       "atomType": "Fusion",
       "x": 0.6,
-      "y": 0.7,
+      "y": 0.5,
       "uniqueID": "id-93",
       "ioValues": [
         {
@@ -697,6 +809,46 @@
   "allConnectors": [
     {
       "ap2Name": "geometry",
+      "ap1ID": "id-172",
+      "ap2ID": "id-175"
+    },
+    {
+      "ap2Name": "Shape2",
+      "ap1ID": "id-175",
+      "ap2ID": "id-181"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-181",
+      "ap2ID": "id-2"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-181",
+      "ap2ID": "id-400"
+    },
+    {
+      "ap2Name": "Shape 1",
+      "ap1ID": "id-187",
+      "ap2ID": "id-181"
+    },
+    {
+      "ap2Name": "OD",
+      "ap1ID": "id-190",
+      "ap2ID": "id-41"
+    },
+    {
+      "ap2Name": "OD",
+      "ap1ID": "id-190",
+      "ap2ID": "id-15"
+    },
+    {
+      "ap2Name": "x",
+      "ap1ID": "id-190",
+      "ap2ID": "id-377"
+    },
+    {
+      "ap2Name": "geometry",
       "ap1ID": "id-37",
       "ap2ID": "id-172"
     },
@@ -711,9 +863,9 @@
       "ap2ID": "id-93"
     },
     {
-      "ap2Name": "geometry",
+      "ap2Name": "retain",
       "ap1ID": "id-93",
-      "ap2ID": "id-187"
+      "ap2ID": "id-396"
     },
     {
       "ap2Name": "geometry",
@@ -731,39 +883,34 @@
       "ap2ID": "id-89"
     },
     {
-      "ap2Name": "geometry",
-      "ap1ID": "id-172",
-      "ap2ID": "id-175"
-    },
-    {
-      "ap2Name": "Shape2",
-      "ap1ID": "id-175",
-      "ap2ID": "id-181"
-    },
-    {
-      "ap2Name": "number or geometry",
-      "ap1ID": "id-181",
-      "ap2ID": "id-2"
+      "ap2Name": "Text",
+      "ap1ID": "id-377",
+      "ap2ID": "id-381"
     },
     {
       "ap2Name": "geometry",
-      "ap1ID": "id-181",
+      "ap1ID": "id-381",
+      "ap2ID": "id-386"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-386",
+      "ap2ID": "id-390"
+    },
+    {
+      "ap2Name": "remove",
+      "ap1ID": "id-390",
+      "ap2ID": "id-396"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-396",
+      "ap2ID": "id-187"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-400",
       "ap2ID": "id-193"
-    },
-    {
-      "ap2Name": "Shape 1",
-      "ap1ID": "id-187",
-      "ap2ID": "id-181"
-    },
-    {
-      "ap2Name": "OD",
-      "ap1ID": "id-190",
-      "ap2ID": "id-41"
-    },
-    {
-      "ap2Name": "OD",
-      "ap1ID": "id-190",
-      "ap2ID": "id-15"
     }
   ],
   "unitsKey": "MM",
