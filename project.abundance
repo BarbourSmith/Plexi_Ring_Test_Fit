@@ -4,53 +4,25 @@
   "y": 0,
   "uniqueID": "id-1",
   "name": "Plexi_Ring_Test_Fit",
+  "ioValues": [
+    {
+      "name": "Fit_Diameter",
+      "ioValue": 201,
+      "currentEquation": "201"
+    }
+  ],
   "topLevel": true,
   "allAtoms": [
     {
-      "atomType": "Export",
-      "x": 0.8,
-      "y": 0.8,
-      "uniqueID": "id-102",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "File Type",
-          "ioValue": "STEP",
-          "currentEquation": "STEP"
-        },
-        {
-          "name": "Resolution (dpi)",
-          "ioValue": 96
-        },
-        {
-          "name": "STL Tolerance",
-          "ioValue": 0.05
-        },
-        {
-          "name": "Part Name",
-          "ioValue": "Plexi_Ring_Test_Fit",
-          "currentEquation": "Plexi_Ring_Test_Fit"
-        }
-      ],
-      "type": null,
-      "resolution": 96,
-      "importIndex": 0,
-      "partName": "Plexi_Ring_Test_Fit"
-    },
-    {
       "atomType": "GitHubMolecule",
       "x": 0.3,
-      "y": 0.4,
+      "y": 0.3,
       "uniqueID": "id-15",
       "name": "Concentric_Circles",
       "ioValues": [
         {
           "name": "OD",
-          "ioValue": 200.5,
-          "currentEquation": "200.5"
+          "ioValue": 201
         },
         {
           "name": "ID",
@@ -85,7 +57,7 @@
           "ioValues": [
             {
               "name": "diameter",
-              "ioValue": 200.5
+              "ioValue": 201
             }
           ]
         },
@@ -188,6 +160,91 @@
       "lastReloadedFromGithubAt": 1790960084036
     },
     {
+      "atomType": "Color",
+      "x": 0.7,
+      "y": 0.3,
+      "uniqueID": "id-172",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "selectedColor": "Glass"
+    },
+    {
+      "atomType": "Move",
+      "x": 0.8,
+      "y": 0.3,
+      "uniqueID": "id-175",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 0
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        },
+        {
+          "name": "zDist",
+          "ioValue": 0
+        }
+      ]
+    },
+    {
+      "atomType": "Assembly",
+      "x": 0.8,
+      "y": 0.6,
+      "uniqueID": "id-181",
+      "ioValues": [
+        {
+          "name": "makeDisjoint",
+          "ioValue": true
+        },
+        {
+          "name": "Shape 1",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "Shape2",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "Shape3",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
+    },
+    {
+      "atomType": "Tag",
+      "x": 0.7,
+      "y": 0.6,
+      "uniqueID": "id-187",
+      "name": "Plastic",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "tags": [
+        "Plastic"
+      ]
+    },
+    {
+      "atomType": "Input",
+      "x": 0,
+      "y": 0.6,
+      "uniqueID": "id-190",
+      "name": "Fit_Diameter",
+      "options": []
+    },
+    {
       "atomType": "Output",
       "x": 1,
       "y": 0.5,
@@ -202,7 +259,7 @@
     {
       "atomType": "Extrude",
       "x": 0.5,
-      "y": 0.5,
+      "y": 0.4,
       "uniqueID": "id-37",
       "ioValues": [
         {
@@ -224,8 +281,7 @@
       "ioValues": [
         {
           "name": "OD",
-          "ioValue": 200.5,
-          "currentEquation": "200.5"
+          "ioValue": 201
         },
         {
           "name": "ID",
@@ -260,7 +316,7 @@
           "ioValues": [
             {
               "name": "diameter",
-              "ioValue": 200.5
+              "ioValue": 201
             }
           ]
         },
@@ -576,7 +632,7 @@
         {
           "name": "Shape2",
           "ioValue": {
-            "geometry": "extrude-cut-circle-100.25-circle-85-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}--1",
+            "geometry": "extrude-cut-circle-100.5-circle-85-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}--1",
             "dimension": "3D",
             "tags": [],
             "plane": {
@@ -602,34 +658,13 @@
         }
       ],
       "unionType": "Fusion"
-    },
-    {
-      "atomType": "Difference",
-      "x": 0.7,
-      "y": 0.6,
-      "uniqueID": "id-98",
-      "ioValues": [
-        {
-          "name": "retain",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "remove",
-          "ioValue": "__GEOMETRY_INPUT__"
-        }
-      ]
     }
   ],
   "allConnectors": [
     {
-      "ap2Name": "number or geometry",
+      "ap2Name": "geometry",
       "ap1ID": "id-37",
-      "ap2ID": "id-2"
-    },
-    {
-      "ap2Name": "remove",
-      "ap1ID": "id-37",
-      "ap2ID": "id-98"
+      "ap2ID": "id-172"
     },
     {
       "ap2Name": "Shape2",
@@ -642,14 +677,9 @@
       "ap2ID": "id-93"
     },
     {
-      "ap2Name": "retain",
-      "ap1ID": "id-93",
-      "ap2ID": "id-98"
-    },
-    {
       "ap2Name": "geometry",
-      "ap1ID": "id-98",
-      "ap2ID": "id-102"
+      "ap1ID": "id-93",
+      "ap2ID": "id-187"
     },
     {
       "ap2Name": "geometry",
@@ -665,6 +695,36 @@
       "ap2Name": "geometry",
       "ap1ID": "id-67",
       "ap2ID": "id-89"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-172",
+      "ap2ID": "id-175"
+    },
+    {
+      "ap2Name": "Shape2",
+      "ap1ID": "id-175",
+      "ap2ID": "id-181"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-181",
+      "ap2ID": "id-2"
+    },
+    {
+      "ap2Name": "Shape 1",
+      "ap1ID": "id-187",
+      "ap2ID": "id-181"
+    },
+    {
+      "ap2Name": "OD",
+      "ap1ID": "id-190",
+      "ap2ID": "id-41"
+    },
+    {
+      "ap2Name": "OD",
+      "ap1ID": "id-190",
+      "ap2ID": "id-15"
     }
   ],
   "unitsKey": "MM",
