@@ -49,13 +49,12 @@
       "ioValues": [
         {
           "name": "OD",
-          "ioValue": 200,
-          "currentEquation": "200"
+          "ioValue": 200.5,
+          "currentEquation": "200.5"
         },
         {
           "name": "ID",
-          "ioValue": 194,
-          "currentEquation": "194"
+          "ioValue": 194
         }
       ],
       "topLevel": false,
@@ -86,7 +85,7 @@
           "ioValues": [
             {
               "name": "diameter",
-              "ioValue": 200
+              "ioValue": 200.5
             }
           ]
         },
@@ -212,8 +211,7 @@
         },
         {
           "name": "height",
-          "ioValue": 100,
-          "currentEquation": "100"
+          "ioValue": 100
         }
       ]
     },
@@ -226,12 +224,12 @@
       "ioValues": [
         {
           "name": "OD",
-          "ioValue": 200
+          "ioValue": 200.5,
+          "currentEquation": "200.5"
         },
         {
           "name": "ID",
-          "ioValue": 170,
-          "currentEquation": "170"
+          "ioValue": 170
         }
       ],
       "topLevel": false,
@@ -262,7 +260,7 @@
           "ioValues": [
             {
               "name": "diameter",
-              "ioValue": 200
+              "ioValue": 200.5
             }
           ]
         },
@@ -376,8 +374,7 @@
         },
         {
           "name": "height",
-          "ioValue": -1,
-          "currentEquation": "-1"
+          "ioValue": -1
         }
       ]
     },
@@ -390,13 +387,11 @@
       "ioValues": [
         {
           "name": "OD",
-          "ioValue": 194,
-          "currentEquation": "194"
+          "ioValue": 194
         },
         {
           "name": "ID",
-          "ioValue": 188,
-          "currentEquation": "188"
+          "ioValue": 188
         }
       ],
       "topLevel": false,
@@ -581,7 +576,7 @@
         {
           "name": "Shape2",
           "ioValue": {
-            "geometry": "extrude-cut-circle-100-circle-85-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}--1",
+            "geometry": "extrude-cut-circle-100.25-circle-85-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}--1",
             "dimension": "3D",
             "tags": [],
             "plane": {
@@ -627,11 +622,6 @@
   ],
   "allConnectors": [
     {
-      "ap2Name": "geometry",
-      "ap1ID": "id-15",
-      "ap2ID": "id-37"
-    },
-    {
       "ap2Name": "number or geometry",
       "ap1ID": "id-37",
       "ap2ID": "id-2"
@@ -642,19 +632,9 @@
       "ap2ID": "id-98"
     },
     {
-      "ap2Name": "geometry",
-      "ap1ID": "id-41",
-      "ap2ID": "id-63"
-    },
-    {
       "ap2Name": "Shape2",
       "ap1ID": "id-63",
       "ap2ID": "id-93"
-    },
-    {
-      "ap2Name": "geometry",
-      "ap1ID": "id-67",
-      "ap2ID": "id-89"
     },
     {
       "ap2Name": "Shape 1",
@@ -670,6 +650,21 @@
       "ap2Name": "geometry",
       "ap1ID": "id-98",
       "ap2ID": "id-102"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-15",
+      "ap2ID": "id-37"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-41",
+      "ap2ID": "id-63"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-67",
+      "ap2ID": "id-89"
     }
   ],
   "unitsKey": "MM",
