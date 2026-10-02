@@ -1,13 +1,678 @@
 {
-    "atomType": "Molecule",
-    "x": 0,
-    "y": 0,
-    "uniqueID": "id-1",
-    "name": "Plexi_Ring_Test_Fit",
-    "topLevel": true,
-    "allAtoms": [],
-    "allConnectors": [],
-    "unitsKey": "MM",
-    "fileTypeVersion": 1,
-    "filetypeVersion": 1
+  "atomType": "Molecule",
+  "x": 0,
+  "y": 0,
+  "uniqueID": "id-1",
+  "name": "Plexi_Ring_Test_Fit",
+  "topLevel": true,
+  "allAtoms": [
+    {
+      "atomType": "Export",
+      "x": 0.8,
+      "y": 0.8,
+      "uniqueID": "id-102",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "File Type",
+          "ioValue": "STEP",
+          "currentEquation": "STEP"
+        },
+        {
+          "name": "Resolution (dpi)",
+          "ioValue": 96
+        },
+        {
+          "name": "STL Tolerance",
+          "ioValue": 0.05
+        },
+        {
+          "name": "Part Name",
+          "ioValue": "Plexi_Ring_Test_Fit",
+          "currentEquation": "Plexi_Ring_Test_Fit"
+        }
+      ],
+      "type": null,
+      "resolution": 96,
+      "importIndex": 0,
+      "partName": "Plexi_Ring_Test_Fit"
+    },
+    {
+      "atomType": "GitHubMolecule",
+      "x": 0.3,
+      "y": 0.4,
+      "uniqueID": "id-15",
+      "name": "Concentric_Circles",
+      "ioValues": [
+        {
+          "name": "OD",
+          "ioValue": 200,
+          "currentEquation": "200"
+        },
+        {
+          "name": "ID",
+          "ioValue": 194,
+          "currentEquation": "194"
+        }
+      ],
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Input",
+          "x": 0,
+          "y": 0.2,
+          "uniqueID": "id-10",
+          "name": "OD",
+          "type": "number",
+          "options": []
+        },
+        {
+          "atomType": "Input",
+          "x": 0,
+          "y": 0.2,
+          "uniqueID": "id-11",
+          "name": "ID",
+          "type": "number",
+          "options": []
+        },
+        {
+          "atomType": "Circle",
+          "x": 0.5,
+          "y": 0.4,
+          "uniqueID": "id-12",
+          "ioValues": [
+            {
+              "name": "diameter",
+              "ioValue": 200
+            }
+          ]
+        },
+        {
+          "atomType": "Circle",
+          "x": 0.4,
+          "y": 0.7,
+          "uniqueID": "id-13",
+          "ioValues": [
+            {
+              "name": "diameter",
+              "ioValue": 194
+            }
+          ]
+        },
+        {
+          "atomType": "Difference",
+          "x": 0.7,
+          "y": 0.6,
+          "uniqueID": "id-14",
+          "ioValues": [
+            {
+              "name": "retain",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "remove",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Output",
+          "x": 1,
+          "y": 0.5,
+          "uniqueID": "id-9",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "diameter",
+          "ap1ID": "id-10",
+          "ap2ID": "id-12"
+        },
+        {
+          "ap2Name": "diameter",
+          "ap1ID": "id-11",
+          "ap2ID": "id-13"
+        },
+        {
+          "ap2Name": "retain",
+          "ap1ID": "id-12",
+          "ap2ID": "id-14"
+        },
+        {
+          "ap2Name": "remove",
+          "ap1ID": "id-13",
+          "ap2ID": "id-14"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-14",
+          "ap2ID": "id-9"
+        }
+      ],
+      "parentRepo": {
+        "lastFoundGit": "2026-09-20T02:23:39.099Z",
+        "privateRepo": false,
+        "repoName": "Concentric_Circles",
+        "dateCreated": "2025-11-08T04:08:14Z",
+        "likes": 0,
+        "pngURL": "https://raw.githubusercontent.com/BarbourSmith/Concentric_Circles/master/project.png?sanitize=true",
+        "readme": "https://raw.githubusercontent.com/BarbourSmith/Concentric_Circles/master/README.md?sanitize=true",
+        "yyyy": 2025,
+        "topMoleculeID": "",
+        "userRanking": 0,
+        "userSetAsThumbnail": false,
+        "githubMoleculesUsed": [],
+        "html_url": "https://github.com/BarbourSmith/Concentric_Circles",
+        "topics": [],
+        "pullRequests": [],
+        "forks": 0,
+        "dateModified": "2026-09-11T21:25:46Z",
+        "ranking": 3,
+        "searchField": "concentric_circles barboursmith creates two concentric circles. the result is 2d ",
+        "owner": "BarbourSmith",
+        "description": "Creates two concentric circles. The result is 2D",
+        "contentURL": "https://raw.githubusercontent.com/BarbourSmith/Concentric_Circles/master/project.abundance?sanitize=true",
+        "svgURL": "https://raw.githubusercontent.com/BarbourSmith/Concentric_Circles/master/project.svg?sanitize=true",
+        "isLocal": false
+      },
+      "unitsKey": "Unitless",
+      "fileTypeVersion": 1,
+      "lastReloadedFromGithubAt": 1790960084036
+    },
+    {
+      "atomType": "Output",
+      "x": 1,
+      "y": 0.5,
+      "uniqueID": "id-2",
+      "ioValues": [
+        {
+          "name": "number or geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.5,
+      "y": 0.5,
+      "uniqueID": "id-37",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 100,
+          "currentEquation": "100"
+        }
+      ]
+    },
+    {
+      "atomType": "GitHubMolecule",
+      "x": 0.3,
+      "y": 0.7,
+      "uniqueID": "id-41",
+      "name": "Concentric_Circles",
+      "ioValues": [
+        {
+          "name": "OD",
+          "ioValue": 200
+        },
+        {
+          "name": "ID",
+          "ioValue": 170,
+          "currentEquation": "170"
+        }
+      ],
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Input",
+          "x": 0,
+          "y": 0.2,
+          "uniqueID": "id-42",
+          "name": "OD",
+          "type": "number",
+          "options": []
+        },
+        {
+          "atomType": "Input",
+          "x": 0,
+          "y": 0.2,
+          "uniqueID": "id-43",
+          "name": "ID",
+          "type": "number",
+          "options": []
+        },
+        {
+          "atomType": "Circle",
+          "x": 0.5,
+          "y": 0.4,
+          "uniqueID": "id-44",
+          "ioValues": [
+            {
+              "name": "diameter",
+              "ioValue": 200
+            }
+          ]
+        },
+        {
+          "atomType": "Circle",
+          "x": 0.4,
+          "y": 0.7,
+          "uniqueID": "id-45",
+          "ioValues": [
+            {
+              "name": "diameter",
+              "ioValue": 170
+            }
+          ]
+        },
+        {
+          "atomType": "Difference",
+          "x": 0.7,
+          "y": 0.6,
+          "uniqueID": "id-46",
+          "ioValues": [
+            {
+              "name": "retain",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "remove",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Output",
+          "x": 1,
+          "y": 0.5,
+          "uniqueID": "id-47",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "diameter",
+          "ap1ID": "id-42",
+          "ap2ID": "id-44"
+        },
+        {
+          "ap2Name": "diameter",
+          "ap1ID": "id-43",
+          "ap2ID": "id-45"
+        },
+        {
+          "ap2Name": "retain",
+          "ap1ID": "id-44",
+          "ap2ID": "id-46"
+        },
+        {
+          "ap2Name": "remove",
+          "ap1ID": "id-45",
+          "ap2ID": "id-46"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-46",
+          "ap2ID": "id-47"
+        }
+      ],
+      "parentRepo": {
+        "lastFoundGit": "2026-09-20T02:23:39.099Z",
+        "privateRepo": false,
+        "repoName": "Concentric_Circles",
+        "dateCreated": "2025-11-08T04:08:14Z",
+        "likes": 0,
+        "pngURL": "https://raw.githubusercontent.com/BarbourSmith/Concentric_Circles/master/project.png?sanitize=true",
+        "readme": "https://raw.githubusercontent.com/BarbourSmith/Concentric_Circles/master/README.md?sanitize=true",
+        "yyyy": 2025,
+        "topMoleculeID": "",
+        "userRanking": 0,
+        "userSetAsThumbnail": false,
+        "githubMoleculesUsed": [],
+        "html_url": "https://github.com/BarbourSmith/Concentric_Circles",
+        "topics": [],
+        "pullRequests": [],
+        "forks": 0,
+        "dateModified": "2026-09-11T21:25:46Z",
+        "ranking": 3,
+        "searchField": "concentric_circles barboursmith creates two concentric circles. the result is 2d ",
+        "owner": "BarbourSmith",
+        "description": "Creates two concentric circles. The result is 2D",
+        "contentURL": "https://raw.githubusercontent.com/BarbourSmith/Concentric_Circles/master/project.abundance?sanitize=true",
+        "svgURL": "https://raw.githubusercontent.com/BarbourSmith/Concentric_Circles/master/project.svg?sanitize=true",
+        "isLocal": false
+      },
+      "unitsKey": "Unitless",
+      "fileTypeVersion": 1,
+      "lastReloadedFromGithubAt": 1790960084036
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.4,
+      "y": 0.6,
+      "uniqueID": "id-63",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": -1,
+          "currentEquation": "-1"
+        }
+      ]
+    },
+    {
+      "atomType": "GitHubMolecule",
+      "x": 0.3,
+      "y": 0.9,
+      "uniqueID": "id-67",
+      "name": "Concentric_Circles",
+      "ioValues": [
+        {
+          "name": "OD",
+          "ioValue": 194,
+          "currentEquation": "194"
+        },
+        {
+          "name": "ID",
+          "ioValue": 188,
+          "currentEquation": "188"
+        }
+      ],
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Input",
+          "x": 0,
+          "y": 0.2,
+          "uniqueID": "id-68",
+          "name": "OD",
+          "type": "number",
+          "options": []
+        },
+        {
+          "atomType": "Input",
+          "x": 0,
+          "y": 0.2,
+          "uniqueID": "id-69",
+          "name": "ID",
+          "type": "number",
+          "options": []
+        },
+        {
+          "atomType": "Circle",
+          "x": 0.5,
+          "y": 0.4,
+          "uniqueID": "id-70",
+          "ioValues": [
+            {
+              "name": "diameter",
+              "ioValue": 194
+            }
+          ]
+        },
+        {
+          "atomType": "Circle",
+          "x": 0.4,
+          "y": 0.7,
+          "uniqueID": "id-71",
+          "ioValues": [
+            {
+              "name": "diameter",
+              "ioValue": 188
+            }
+          ]
+        },
+        {
+          "atomType": "Difference",
+          "x": 0.7,
+          "y": 0.6,
+          "uniqueID": "id-72",
+          "ioValues": [
+            {
+              "name": "retain",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "remove",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Output",
+          "x": 1,
+          "y": 0.5,
+          "uniqueID": "id-73",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "diameter",
+          "ap1ID": "id-68",
+          "ap2ID": "id-70"
+        },
+        {
+          "ap2Name": "diameter",
+          "ap1ID": "id-69",
+          "ap2ID": "id-71"
+        },
+        {
+          "ap2Name": "retain",
+          "ap1ID": "id-70",
+          "ap2ID": "id-72"
+        },
+        {
+          "ap2Name": "remove",
+          "ap1ID": "id-71",
+          "ap2ID": "id-72"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-72",
+          "ap2ID": "id-73"
+        }
+      ],
+      "parentRepo": {
+        "lastFoundGit": "2026-09-20T02:23:39.099Z",
+        "privateRepo": false,
+        "repoName": "Concentric_Circles",
+        "dateCreated": "2025-11-08T04:08:14Z",
+        "likes": 0,
+        "pngURL": "https://raw.githubusercontent.com/BarbourSmith/Concentric_Circles/master/project.png?sanitize=true",
+        "readme": "https://raw.githubusercontent.com/BarbourSmith/Concentric_Circles/master/README.md?sanitize=true",
+        "yyyy": 2025,
+        "topMoleculeID": "",
+        "userRanking": 0,
+        "userSetAsThumbnail": false,
+        "githubMoleculesUsed": [],
+        "html_url": "https://github.com/BarbourSmith/Concentric_Circles",
+        "topics": [],
+        "pullRequests": [],
+        "forks": 0,
+        "dateModified": "2026-09-11T21:25:46Z",
+        "ranking": 3,
+        "searchField": "concentric_circles barboursmith creates two concentric circles. the result is 2d ",
+        "owner": "BarbourSmith",
+        "description": "Creates two concentric circles. The result is 2D",
+        "contentURL": "https://raw.githubusercontent.com/BarbourSmith/Concentric_Circles/master/project.abundance?sanitize=true",
+        "svgURL": "https://raw.githubusercontent.com/BarbourSmith/Concentric_Circles/master/project.svg?sanitize=true",
+        "isLocal": false
+      },
+      "unitsKey": "Unitless",
+      "fileTypeVersion": 1,
+      "lastReloadedFromGithubAt": 1790960084036
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.4,
+      "y": 0.8,
+      "uniqueID": "id-89",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 10
+        }
+      ]
+    },
+    {
+      "atomType": "Fusion",
+      "x": 0.6,
+      "y": 0.7,
+      "uniqueID": "id-93",
+      "ioValues": [
+        {
+          "name": "Shape 1",
+          "ioValue": {
+            "geometry": "extrude-cut-circle-97-circle-94-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10",
+            "dimension": "3D",
+            "tags": [],
+            "plane": {
+              "origin": [
+                0,
+                0,
+                0
+              ],
+              "xDir": [
+                1,
+                0,
+                0
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ]
+            },
+            "color": "#aad7f2",
+            "bom": []
+          }
+        },
+        {
+          "name": "Shape2",
+          "ioValue": {
+            "geometry": "extrude-cut-circle-100-circle-85-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}--1",
+            "dimension": "3D",
+            "tags": [],
+            "plane": {
+              "origin": [
+                0,
+                0,
+                0
+              ],
+              "xDir": [
+                1,
+                0,
+                0
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ]
+            },
+            "color": "#aad7f2",
+            "bom": []
+          }
+        }
+      ],
+      "unionType": "Fusion"
+    },
+    {
+      "atomType": "Difference",
+      "x": 0.7,
+      "y": 0.6,
+      "uniqueID": "id-98",
+      "ioValues": [
+        {
+          "name": "retain",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "remove",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
+    }
+  ],
+  "allConnectors": [
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-15",
+      "ap2ID": "id-37"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-37",
+      "ap2ID": "id-2"
+    },
+    {
+      "ap2Name": "remove",
+      "ap1ID": "id-37",
+      "ap2ID": "id-98"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-41",
+      "ap2ID": "id-63"
+    },
+    {
+      "ap2Name": "Shape2",
+      "ap1ID": "id-63",
+      "ap2ID": "id-93"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-67",
+      "ap2ID": "id-89"
+    },
+    {
+      "ap2Name": "Shape 1",
+      "ap1ID": "id-89",
+      "ap2ID": "id-93"
+    },
+    {
+      "ap2Name": "retain",
+      "ap1ID": "id-93",
+      "ap2ID": "id-98"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-98",
+      "ap2ID": "id-102"
+    }
+  ],
+  "unitsKey": "MM",
+  "fileTypeVersion": 1,
+  "filetypeVersion": 1
 }
