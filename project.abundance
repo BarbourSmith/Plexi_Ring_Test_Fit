@@ -245,6 +245,40 @@
       "options": []
     },
     {
+      "atomType": "Export",
+      "x": 0.9,
+      "y": 0.7,
+      "uniqueID": "id-193",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "File Type",
+          "ioValue": "STEP",
+          "currentEquation": "STEP"
+        },
+        {
+          "name": "Resolution (dpi)",
+          "ioValue": 96
+        },
+        {
+          "name": "STL Tolerance",
+          "ioValue": 0.05
+        },
+        {
+          "name": "Part Name",
+          "ioValue": "Plexi_Ring_Test_Fit",
+          "currentEquation": "Plexi_Ring_Test_Fit"
+        }
+      ],
+      "type": null,
+      "resolution": 96,
+      "importIndex": 0,
+      "partName": "Plexi_Ring_Test_Fit"
+    },
+    {
       "atomType": "Output",
       "x": 1,
       "y": 0.5,
@@ -710,6 +744,11 @@
       "ap2Name": "number or geometry",
       "ap1ID": "id-181",
       "ap2ID": "id-2"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-181",
+      "ap2ID": "id-193"
     },
     {
       "ap2Name": "Shape 1",
