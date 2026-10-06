@@ -7,8 +7,8 @@
   "ioValues": [
     {
       "name": "Fit_Diameter",
-      "ioValue": 194.5,
-      "currentEquation": "194.5"
+      "ioValue": 194.25,
+      "currentEquation": "194.25"
     }
   ],
   "topLevel": true,
@@ -22,11 +22,11 @@
       "ioValues": [
         {
           "name": "OD",
-          "ioValue": 200.5
+          "ioValue": 200.25
         },
         {
           "name": "ID",
-          "ioValue": 194.5
+          "ioValue": 194.25
         }
       ],
       "topLevel": false,
@@ -57,7 +57,7 @@
           "ioValues": [
             {
               "name": "diameter",
-              "ioValue": 200.5
+              "ioValue": 200.25
             }
           ]
         },
@@ -69,7 +69,7 @@
           "ioValues": [
             {
               "name": "diameter",
-              "ioValue": 194.5
+              "ioValue": 194.25
             }
           ]
         },
@@ -315,7 +315,7 @@
       "ioValues": [
         {
           "name": "x",
-          "ioValue": 194.5
+          "ioValue": 194.25
         }
       ],
       "currentEquation": "x + ''"
@@ -332,7 +332,7 @@
         },
         {
           "name": "Text",
-          "ioValue": "194.5",
+          "ioValue": "194.25",
           "currentEquation": "Lorem Ipsum"
         },
         {
@@ -428,7 +428,7 @@
       "ioValues": [
         {
           "name": "OD",
-          "ioValue": 200.5,
+          "ioValue": 200.25,
           "currentEquation": "200"
         },
         {
@@ -464,7 +464,7 @@
           "ioValues": [
             {
               "name": "diameter",
-              "ioValue": 200.5
+              "ioValue": 200.25
             }
           ]
         },
@@ -837,7 +837,7 @@
       "ioValues": [
         {
           "name": "D",
-          "ioValue": 194.5
+          "ioValue": 194.25
         }
       ],
       "currentEquation": "D+6"
@@ -867,7 +867,7 @@
       "ioValues": [
         {
           "name": "OD",
-          "ioValue": 194.5
+          "ioValue": 194.25
         },
         {
           "name": "ID",
@@ -902,7 +902,7 @@
           "ioValues": [
             {
               "name": "diameter",
-              "ioValue": 194.5
+              "ioValue": 194.25
             }
           ]
         },
