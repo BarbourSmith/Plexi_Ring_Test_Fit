@@ -7,7 +7,8 @@
   "ioValues": [
     {
       "name": "Fit_Diameter",
-      "ioValue": 195
+      "ioValue": 194.5,
+      "currentEquation": "194.5"
     }
   ],
   "topLevel": true,
@@ -21,11 +22,11 @@
       "ioValues": [
         {
           "name": "OD",
-          "ioValue": 201
+          "ioValue": 200.5
         },
         {
           "name": "ID",
-          "ioValue": 195
+          "ioValue": 194.5
         }
       ],
       "topLevel": false,
@@ -56,7 +57,7 @@
           "ioValues": [
             {
               "name": "diameter",
-              "ioValue": 201
+              "ioValue": 200.5
             }
           ]
         },
@@ -68,7 +69,7 @@
           "ioValues": [
             {
               "name": "diameter",
-              "ioValue": 195
+              "ioValue": 194.5
             }
           ]
         },
@@ -314,7 +315,7 @@
       "ioValues": [
         {
           "name": "x",
-          "ioValue": 195
+          "ioValue": 194.5
         }
       ],
       "currentEquation": "x + ''"
@@ -331,7 +332,7 @@
         },
         {
           "name": "Text",
-          "ioValue": "195",
+          "ioValue": "194.5",
           "currentEquation": "Lorem Ipsum"
         },
         {
@@ -427,7 +428,7 @@
       "ioValues": [
         {
           "name": "OD",
-          "ioValue": 201,
+          "ioValue": 200.5,
           "currentEquation": "200"
         },
         {
@@ -463,7 +464,7 @@
           "ioValues": [
             {
               "name": "diameter",
-              "ioValue": 201
+              "ioValue": 200.5
             }
           ]
         },
@@ -836,7 +837,7 @@
       "ioValues": [
         {
           "name": "D",
-          "ioValue": 195
+          "ioValue": 194.5
         }
       ],
       "currentEquation": "D+6"
@@ -866,7 +867,7 @@
       "ioValues": [
         {
           "name": "OD",
-          "ioValue": 195
+          "ioValue": 194.5
         },
         {
           "name": "ID",
@@ -901,7 +902,7 @@
           "ioValues": [
             {
               "name": "diameter",
-              "ioValue": 195
+              "ioValue": 194.5
             }
           ]
         },
